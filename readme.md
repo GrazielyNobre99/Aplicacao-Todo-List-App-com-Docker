@@ -15,12 +15,12 @@ Este projeto é uma aplicação web de lista de tarefas desenvolvida com **Pytho
 
 ## Estrutura do Projeto
 
-├── app.py
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-└── templates/
-└── base.html
+app.py
+Dockerfile
+docker-compose.yml
+requirements.txt
+templates/
+- base.html
 
 
 ### Arquivos principais
@@ -70,3 +70,7 @@ docker compose down
 docker compose up
 
 Verifique se as Tarefas inseridas persistem na Aplicação.
+
+6. Autores
+
+Projeto adaptado e dockerizado por Graziely Nobre e Jarbas Santos com base no código de joaomarceloalencar/devops.
