@@ -15,12 +15,12 @@ Este projeto é uma aplicação web de lista de tarefas desenvolvida com **Pytho
 
 ## Estrutura do Projeto
 
-app.py
-Dockerfile
-docker-compose.yml
-requirements.txt
-templates/
-- base.html
+ - app.py
+ - Dockerfile
+ - docker-compose.yml
+ - requirements.txt
+ - templates/
+ - base.html
 
 
 ### Arquivos principais
@@ -45,15 +45,16 @@ templates/
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/GrazielyNobre99/Aplicacao-Todo-List-App-com-Docker.git
    cd seu-repositorio
 
-2. Construa e Execute a Aplicação
+2. Construa e Execute a Aplicação:
+
+    ```bash
+    docker compose up --build
 
 O --buil é necessario apenas na primeira vez em que executar o docker compose.
 Nas proximas vezes que for iniciar novamente o ambiente, use sem o --build.
-
-docker compose up --build
 
 3. Acesse no Navegador
 
@@ -61,16 +62,19 @@ http://localhost:5000
 
 4. Inclua algumas Tarefas para Testar a Aplicação
 
-5. Para Encerrar a Aplicação e Testar a Persistencia dos Dados
+5. Encerre o Conteiner e em Seguida Inicie, para testar a Persistencia dos Dados.
 
-Se estiver usando Linux, use sudo antes do comando:
+Se estiver usando Linux, use **sudo** antes dos comandos:
+    
+    ```bash
+    docker compose down
+    docker compose up
 
-docker compose down
+down vai encerrar
+up vai iniciar 
 
-docker compose up
+6. Verifique se as Tarefas inseridas persistem na Aplicação.
 
-Verifique se as Tarefas inseridas persistem na Aplicação.
-
-6. Autores
+7. Autores
 
 Projeto adaptado e dockerizado por Graziely Nobre e Jarbas Santos com base no código de joaomarceloalencar/devops.
