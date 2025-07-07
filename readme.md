@@ -76,6 +76,8 @@ down vai encerrar, e up vai iniciar.
 
 ### Para VM na AWS EC2
 
+Execute o Passo 1 do Inicio do Projeto para Clonar o Repositório..
+
 1. Nas Regras de Entrada da VM crie uma Regra de Entrada para:
 
 - TCP Personalizado
