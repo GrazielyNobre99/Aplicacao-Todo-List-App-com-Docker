@@ -8,7 +8,7 @@ Este projeto é uma aplicação web de lista de tarefas desenvolvida com **Pytho
 
 - Demonstrar o uso prático de Docker com Flask.
 - Persistir dados com SQLite utilizando volumes Docker.
-- Rodar localmente ou em nuvem (ex: AWS EC2).
+- Rodar localmente ou em nuvem (ex: AWS EC2 - **Instruções ao Final**).
 - Manter a aplicação simples, funcional e didática.
 
 ---
@@ -46,7 +46,7 @@ Este projeto é uma aplicação web de lista de tarefas desenvolvida com **Pytho
 
    ```bash
    git clone https://github.com/GrazielyNobre99/Aplicacao-Todo-List-App-com-Docker.git
-   cd seu-repositorio
+   cd Aplicacao-Todo-List-App-com-Docker
 
 2. Construa e Execute a Aplicação:
 
@@ -70,11 +70,34 @@ Se estiver usando Linux, use **sudo** antes dos comandos:
     docker compose down
     docker compose up
 
-down vai encerrar
-up vai iniciar 
+down vai encerrar, e up vai iniciar. 
 
 6. Verifique se as Tarefas inseridas persistem na Aplicação.
 
-7. Autores
+### Para VM na AWS EC2
+
+1. Nas Regras de Entrada da VM crie uma Regra de Entrada para:
+
+- TCP Personalizado
+- Porta 5000
+- 0.0.0.0/0
+
+Salve a nova regra de entrada.
+
+2. Em seguida no terminal da VM use os seguintes comandos:
+    
+    ```bash
+    docker compose down
+    docker compose up
+
+Se estiver com o conteiner em execução pode usar CTRL + C para encerrar.
+(Tem a mesma função do docker compose down) 
+
+3. Acesse no Navegador
+
+http://IP-PUBLICO-DA-SUA-VM:5000
+
+
+### Autores
 
 Projeto adaptado e dockerizado por Graziely Nobre e Jarbas Santos com base no código de joaomarceloalencar/devops.
