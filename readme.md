@@ -100,4 +100,4 @@ http://IP-PUBLICO-DA-SUA-VM:5000
 
 ### Autores
 
-Projeto adaptado e dockerizado por Graziely Nobre e Jarbas Santos com base no código de joaomarceloalencar/devops.
+Projeto adaptado e dockerizado por GAntonia Graziely Nobre Moreira e Francisco Jarbas dos Santos Sousa com base no código do Prof.João Marcelo - joaomarceloalencar/devops.
